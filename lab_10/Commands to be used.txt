@@ -1,0 +1,5 @@
+for task 4,you can generate structuring elements of different shapes as follows:-
+ellipseMask = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (ellipseSize, ellipseSize))
+for other shapes you have to play around with first argument.
+
+After generating structuring element,you may perform opening operation on original image with these structuring elements (individully or in combination ) using cv2.morphologyEx function to segment out the shapes.
